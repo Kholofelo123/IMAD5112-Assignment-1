@@ -1,28 +1,43 @@
-package com.example.buttonrowapp
+package com.example.mealsuggester
 
+import android.annotation.SuppressLint
 import android.os.Bundle
-import android.widget.Button
-import android.widget.Toast
+import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
 
 class MainActivity : AppCompatActivity() {
+    @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        // Initialize Buttons
-        val button1 = findViewById<Button>(R.id.button1)
-        val button2 = findViewById<Button>(R.id.button2)
-        val button3 = findViewById<Button>(R.id.button3)
+        val inputTime: EditText = findViewById(R.id.inputTime)
+        val btnSuggest: Button = findViewById(R.id.btnSuggest)
+        val btnReset: Button = findViewById(R.id.btnReset)
+        val txtSuggestion: TextView = findViewById(R.id.txtSuggestion)
+        val imgMeal: ImageView = findViewById(R.id.imgMeal)
 
-        // Set Click Listeners
-        button1.setOnClickListener { showToast("Button 1 Clicked") }
-        button2.setOnClickListener { showToast("Button 2 Clicked") }
-        button3.setOnClickListener { showToast("Button 3 Clicked") }
-    }
+        btnSuggest.setOnClickListener {
+            val time = inputTime.text.toString().lowercase().trim()
 
-    // Function to Show Toast Messages
-    private fun showToast(message: String) {
-        Toast.makeText(this, message, Toast.LENGTH_SHORT).show()
+            val meal = when (time) {
+                "morning" -> Pair("Breakfast: Eggs", R.drawable.breakfast)
+                "late morning" -> Pair("Snack: Fruit", R.drawable.fruit)
+                "afternoon" -> Pair("Lunch: Sandwich", R.drawable.lunch)
+                "late afternoon" -> Pair("Snack: Cake", R.drawable.cake)
+                "dinner" -> Pair("Dinner: Pasta", R.drawable.dinner)
+                "after dinner" -> Pair("Dessert: Ice Cream", R.drawable.ice_cream)
+                else -> Pair("Invalid time entered. Please try again!", 0)
+            }
+
+            txtSuggestion.text = meal.first
+            if (meal.second != 0) imgMeal.setImageResource(meal.second)
+        }
+
+        btnReset.setOnClickListener {
+            inputTime.text.clear()
+            txtSuggestion.text = ""
+            imgMeal.setImageResource(0)
+        }
     }
 }
