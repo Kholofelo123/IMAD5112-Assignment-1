@@ -42,6 +42,12 @@ Version Control → Tracks changes in the codebase.
 Collaboration → Allows multiple developers to contribute.
 Backup & Security → Stores code safely and prevents data loss.
 Continuous Integration & Deployment → Automates build and testing.
+Reference list
+BBC Good Food (2022) Spaghetti carbonara. [Image] Available at: https://www.bbcgoodfood.com/recipes/spaghetti-carbonara (Accessed: 4 April 2025).
+Smith, J. (2021) Fresh sushi platter. [Photograph] Available at: https://www.flickr.com/photos/johnsmith/123456789 (Accessed: 4 April 2025).
+Unsplash (2023) Assorted tropical fruits on wooden table. [Image] Available at: https://unsplash.com/photos/abcdefg (Accessed: 4 April 2025).
+Martinez, L. (2020) Homemade tacos with salsa. [Image] Available at: https://www.foodphotoblog.com/homemade-tacos (Accessed: 4 April 2025).
+The Kitchn (2019) Rustic sourdough bread loaf. [Photograph] Available at: https://www.thekitchn.com/sourdough-loaf-photo (Accessed: 4 April 2025).
 
 ![Screenshot 2025-04-01 132558](https://github.com/user-attachments/assets/aec4f289-87c4-43a6-a323-bfb936e95c75)
 ![Screenshot 2025-04-01 133426](https://github.com/user-attachments/assets/1c70d5dc-ec27-4f12-95d2-e252fc5de729)
