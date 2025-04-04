@@ -1,7 +1,7 @@
 # IMAD5112-Assignment-1
 Meal Suggester
 GitHub: https://github.com/Kholofelo123/IMAD5112-Assignment-1.git 
-YouTube:
+YouTube: https://youtu.be/b966zucGTAs?si=xIhunSsiX440jvZf 
 
 Purpose of the App
 Overview
