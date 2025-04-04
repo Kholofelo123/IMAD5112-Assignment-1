@@ -1,8 +1,8 @@
 # IMAD5112-Assignment-1
 Meal Suggester
 GitHub: https://github.com/Kholofelo123/IMAD5112-Assignment-1.git 
-YouTube: https://youtu.be/b966zucGTAs?si=xIhunSsiX440jvZf 
-
+YouTube: 
+https:https://youtube.com/shorts/ZwLCAAQFUyk?si=3asDdXcFUEvkQmNd
 Purpose of the App
 Overview
 The Meal Suggestion App is designed to provide meal recommendations based on the user's input regarding the time of day. By entering a time, users receive a suggested meal along with an image of that meal.
